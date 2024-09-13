@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="#"> <!-- for foxing the error: flavico.ico not found -->
+    <title>Todo List</title>
+  </head>
+  <body>
+    <div>
+     <!--<marquee direction="left">
+        <img src="images/yoshi.png" id="yoshi">
+      </marquee>
+      <marquee direction="up">This text will scroll from bottom to top</marquee>
+    </div>--> 
+    <div class="flexcontainer">
+      <div class="background-container">
+        <h1 class="flexitem">todos</h1>
+        <div class="row">
+          <input type="text" id="input-box" placeholder="... add task">
+          <button type="button" id="submit-button" onClick="onclick_addTask()">Add </button>
+        </div>
+        <!-- list elements sgart --> 
+        <ul id="list-container">
+        </ul>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

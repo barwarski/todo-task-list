@@ -1,0 +1,111 @@
+.flexcontainer {
+    padding-left: 30%;
+    padding-right: 30%;
+    font-family: 'Courier New', monospace;
+  }
+
+body{
+  background-color: #007FFF;
+  animation-name: body_background;
+  animation-duration: 100s;
+}
+@keyframes body_background {
+  25% {background-color: yellow;}
+  50% {background-color: purple;}
+  100% {background-color: #007FFF;}
+}
+div {
+  padding-left: 5%;
+  padding-right: 5%;
+}
+.background-container {
+    flex-direction: column;
+    background-color: #faf8f6;
+    width: 200px;
+    border-radius: 25px;
+    width: 100%;
+    padding: 5% 10% 10% 10%;
+}
+.row{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #edeef0;
+  border-radius: 30px;
+  padding-left: 20px;
+  margin-bottom: 25px;
+}
+input{
+  flex: 1;
+  border: none;
+  outline: none;
+  background: transparent;
+  padding: 10px;
+  font-weight: 14px;
+}
+button{
+  border: none;
+  outline: none;
+  padding: 16px 5cqb;
+  background: #ff5945;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 40px;
+}
+ul li{
+  list-style: none;
+  font-size: 17px;
+  padding: 12px 8px 12px 50px;
+  user-select: none;
+  cursor: pointer;
+  position: relative;
+}
+
+ul li::before{
+  content: '';
+  position: absolute;
+  height: 28px;
+  width: 28px;
+  border-radius: 50%;
+  background-image: url(images/unchecked.png);
+  background-size: cover;
+  background-position: center;
+  top: 12px;
+  left: 8px;
+
+}
+ul li.checked{
+  color: #555;
+  text-decoration: line-through;
+}
+
+ul li.checked::before{
+  background-image: url(images/checked.png);
+}
+
+ul li span{
+  position: absolute;
+  right: 0;
+  top: 5px;
+  width: 40px;
+  height: 40px;
+  font-size: 22px;
+  color: #555;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 50%;
+}
+
+ul li span:hover{
+  background: #edeef0;
+}
+
+#yoshi{
+  width: 100px;
+  bottom: 10%;
+}
+
+marquee{
+  overflow: hidden;
+}
